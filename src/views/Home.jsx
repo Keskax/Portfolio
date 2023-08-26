@@ -8,6 +8,7 @@ import { Link } from "react-scroll";
 import pdfLink from "../assets/pdf/CV_kevin_cabello.pdf";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
+import download from "../assets/download.png";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -75,7 +76,8 @@ const Home = () => {
                     download
                     className="btn btn-sm btn-secondary text-white"
                   >
-                    Download CV <span className=" fa fa-download"></span>
+                    Download CV
+                    <span className=" fa fa-download"></span>
                   </a>
                 </div>
               </div>
