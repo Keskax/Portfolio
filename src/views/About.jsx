@@ -51,9 +51,8 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              Using a combination of cutting-edge technologies and reliable
-              open-source software I build user-focused, performant apps and
-              websites for smartphones, tablets, and desktops.
+              Using a combination of cutting-edge technologies and trusted open
+              source software, I create high-performance websites and apps
             </p>
           </motion.div>
           <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between ">
