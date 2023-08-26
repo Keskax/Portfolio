@@ -10,7 +10,6 @@ const Services = () => {
       className={
         theme.state.darkMode ? "pb-20 bg-fixed bg-gray-100" : "pb-20 bg-black"
       }
-      // style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
     >
       <div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-4 pt-20"

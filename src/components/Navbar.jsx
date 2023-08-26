@@ -7,6 +7,7 @@ import Hamburger from "hamburger-react";
 const Navbar = () => {
   const theme = useContext(ThemeContext);
   const [toggle, setToggle] = useState(false);
+  const [language, setLanguage] = useState("en");
   const darkMode = theme.state.darkMode;
   const links = [
     {
@@ -29,6 +30,10 @@ const Navbar = () => {
       name: "Contact",
       route: "contact",
     },
+    {
+      name: "Language",
+      route: "language",
+    },
   ];
 
   function toggleTheme() {
@@ -37,6 +42,10 @@ const Navbar = () => {
     } else {
       theme.dispatch({ type: "DARKMODE" });
     }
+  }
+
+  function toggleLanguage() {
+    setLanguage(language === "en" ? "es" : "en");
   }
 
   return (
@@ -85,6 +94,23 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+            <div onClick={() => toggleLanguage}>
+              {darkMode ? (
+                <img
+                  src="https://img.icons8.com/?size=512&id=XcxSVYYotUzR&format=png"
+                  className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
+                  alt=""
+                />
+              ) : (
+                <img
+                  src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
+                  className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
+                  alt=""
+                />
+              )}
+            </div>
+
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
                 <img
