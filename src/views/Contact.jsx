@@ -119,9 +119,9 @@ const Contact = () => {
               href="hello"
               className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase"
             >
-              xxxxxx, xxxxxx
+              Barranquilla, Atlántico
               <br />
-              xxxxx
+              Colombia
             </a>
             <h1 className="text-3xl  font-bold">Social</h1>
             <ul className="flex">
