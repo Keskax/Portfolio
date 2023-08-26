@@ -30,18 +30,17 @@ const About = () => {
                   : "mt-4 text-xl text-justify text-white"
               }
             >
-              I'm a self-taught web developer and Mobile App Developer with
-              experience in designing new features from ideation to production,
-              implementation of wireframes and design flows into high
-              performance software applications. I take into consideration the
-              user experience while writing reusable and efficient code. I
-              passionately combine good design, technology, and innovation in
-              all my projects, which I like to accompany from the first idea to
-              release.Currently, I'm focused on the backend development.
+              I'm a highly motivated and passionate Full Stack web developer
+              with a background in mining engineering. With experience in HTML5,
+              CSS3 and JavaScript, along with knowledge of frameworks like
+              React.js. In addition, I have command of agile methodologies, GIT
+              and experience in Back-End development with Node.js and relational
+              databases. With an intermediate level of English, I am looking for
+              an opportunity to apply my skills and knowledge in a professional
+              environment.
             </p>
           </motion.div>
-          <motion.div
-          >
+          <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
               Technologies and Tools
             </h4>
