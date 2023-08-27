@@ -6,9 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 import global_en from "../src/language/en/global.json";
 import global_es from "../src/language/es/global.json";
 import i18next from "i18next";
-import { I18nextProvider } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 
-i18next.init({
+i18next.use({
   interpolation: { escapeValue: false },
   lng: "en",
   resources: {
@@ -23,9 +23,9 @@ i18next.init({
 
 ReactDOM.render(
   <React.StrictMode>
-    <I18nextProvider i18n={i18next}>
-      <App />
-    </I18nextProvider>
+    <I18nextProvider>
+    <App />
+    <I18nextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

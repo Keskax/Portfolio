@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
+import En from "../assets/En.png";
+import Es from "../assets/Es.png";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -30,10 +32,6 @@ const Navbar = () => {
       name: "Contact",
       route: "contact",
     },
-    {
-      name: "Language",
-      route: "language",
-    },
   ];
 
   function toggleTheme() {
@@ -44,8 +42,24 @@ const Navbar = () => {
     }
   }
 
+  async function changeLanguage(language) {
+    const requestJson = await fetch(`../src/language/${language}.json`);
+    const text = await requestJson.json();
+
+    const textToChange = document.querySelectorAll("[data-section]");
+
+    textToChange.forEach((element) => {
+      const section = element.dataset.section;
+      const value = element.dataset.value;
+
+      element.innerHTML = text[section][value];
+    });
+  }
+
   function toggleLanguage() {
-    setLanguage(language === "en" ? "es" : "en");
+    const newLanguage = language === "en" ? "es" : "en";
+    setLanguage(newLanguage);
+    changeLanguage(newLanguage);
   }
 
   return (
@@ -95,16 +109,16 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <div onClick={() => toggleLanguage}>
-              {darkMode ? (
+            <div onClick={toggleLanguage}>
+              {language === "en" ? (
                 <img
-                  src="https://img.icons8.com/?size=512&id=XcxSVYYotUzR&format=png"
+                  src={En}
                   className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
                   alt=""
                 />
               ) : (
                 <img
-                  src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
+                  src={Es}
                   className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
                   alt=""
                 />
