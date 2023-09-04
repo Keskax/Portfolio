@@ -114,7 +114,7 @@ const Contact = () => {
             >
               kcabello2@hotmail.com
             </a>
-            <h1 className="text-3xl  font-bold">Address</h1>
+            <h1 className="text-3xl  font-bold">Location</h1>
             <a
               href="hello"
               className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase"

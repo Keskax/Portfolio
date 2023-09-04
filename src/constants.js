@@ -39,10 +39,6 @@ export const techStack = [
   },
 
   {
-    name: "Tailwind CSS",
-    link: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
-  },
-  {
     name: "Git",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
   },
@@ -72,25 +68,18 @@ export const contactLinks = [
 export const serviceData = [
   {
     name: "Web Application Development",
-    desc: "Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine",
+    desc: "Designing and developing responsive websites that not only function flawlessly but also provide an engaging user experience. My proficiency in HTML5, CSS3, and JavaScript, coupled with hands-on experience in frameworks like React.js, allows me to create visually appealing and interactive web applications.",
     img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png",
   },
   {
-    name: "Mobile Application Development",
-    desc: `We provide a range of mobile application development services
-    including custom mobile development on Android platforms, building
-    cross-platform apps, designing user experience and integrating
-    novel mobile interfaces such as chat and voice`,
+    name: "Frontend Development",
+    desc: `Designing and developing responsive websites that not only function flawlessly but also provide an engaging user experience. My proficiency in HTML5, CSS3, and JavaScript, coupled with hands-on experience in frameworks like React.js, allows me to create visually appealing and interactive web applications.`,
     img: "https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png",
   },
 
   {
     name: "Backend Development",
-    desc: `Graphic design is a craft where professionals create visual
-    content to communicate messages. By applying visual hierarchy and
-    page layout techniques, designers use typography and pictures to
-    meet users' specific needs and focus on the logic of displaying
-    elements in interactive designs, to optimize the user experience.`,
+    desc: `Building the engine that drives web applications. With knowledge of Node.js, I develop strong server-side logic that supports the interface. I have experience in database management ensuring efficient data handling and retrieval.`,
     img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png",
   },
 ];

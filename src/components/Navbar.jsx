@@ -3,8 +3,6 @@ import { Link } from "react-scroll";
 import { ThemeContext } from "../themeProvider";
 import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
-import En from "../assets/En.png";
-import Es from "../assets/Es.png";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
@@ -109,7 +107,7 @@ const Navbar = () => {
               ))}
             </ul>
 
-            <div onClick={toggleLanguage}>
+            {/* <div onClick={toggleLanguage}>
               {language === "en" ? (
                 <img
                   src={En}
@@ -123,7 +121,7 @@ const Navbar = () => {
                   alt=""
                 />
               )}
-            </div>
+            </div> */}
 
             <div onClick={() => toggleTheme()}>
               {darkMode ? (
