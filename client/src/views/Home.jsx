@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
 import heroBg from "../assets/webdev.svg";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-
 import pdfLink from "../assets/pdf/CV_kevin_cabello.pdf";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
@@ -33,8 +32,8 @@ const Home = () => {
                 Hi, I am Kevin
               </motion.span>
               <span className="block text-blue-500 z-0 lg:inline">
-                <Typical
-                  steps={[
+                <TypeAnimation
+                  sequence={[
                     "Full Stack Developer",
                     900,
                     "Front End Developer",
