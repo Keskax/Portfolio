@@ -41,7 +41,7 @@ const Home = () => {
                     "Back End Developer",
                     900,
                   ]}
-                  loop={Infinity}
+                  repeat={Infinity}
                 />
               </span>
             </h1>
