@@ -1,0 +1,9 @@
+{
+  "about": {
+    "title": "About Me",
+    "aboutMe": {
+      "title": "A bit about me",
+      "content": "I am a highly motivated and passionate Full Stack web developer with a background in mining engineering. I have experience in HTML5, CSS3, and JavaScript, along with knowledge of frameworks like React.js. Additionally, I am proficient in agile methodologies, GIT version control, and Back-End development using Node.js and relational databases. With an intermediate level of English, I am seeking an opportunity to apply my skills and knowledge in a professional environment."
+    }
+  }
+}
